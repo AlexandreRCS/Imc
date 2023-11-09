@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothings: antialiased;
+    -moz-font-smoothings: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --heading:#0C3440;
+
+    --label:#00453A;
+
+    --P-input:#212529;
+    --Bg-input:#02799D;
+
+    --tt-buttom:#FFFFFF;
+    --bg-buttom:#02799D;
+
+    --bg-erro:#F03E3E;
+    --tt-erro:#FFFFFF;
+
+    --tt-poupop:#0C3440;
+
+}
+
+body{
+    background-color: #040924;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    background-color: #FFFFFF;
+
+    max-width: 42.8rem;
+
+    padding: 4.8rem 6.4rem 6.4rem;
+    margin-top: -100px;
+}
