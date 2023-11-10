@@ -12,11 +12,12 @@
 
     --heading:#0C3440;
 
-    --label:#00453A;
+    --tt-label:#00453A;
 
     --Place-input:#212529;
-    --Bg-input:#02799D;
+    --Bg-input:#DCE2E9;
     --ot-input:#02799D;
+    --bor-input:#02799D;
 
     --tt-buttom:#FFFFFF;
     --bg-buttom:#02799D;
@@ -33,7 +34,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+body, button, input{
+    font-size: 1.6rem;
+}
+
 .container{
+    
     height: 100vh;
     display: grid;
     place-content: center;
@@ -46,6 +52,7 @@ body{
 
     padding: 4.8rem 6.4rem 6.4rem;
     margin-top: -100px;
+    border-radius: .6rem;
 }
 
 .title{
@@ -54,11 +61,51 @@ body{
 
     color: var(--heading);
 }
-
-.input-wrapper label{
-    
+form{
+    width: 32rem;
 }
 
+form input:focus{
+    outline: 2px solid --ot-input;
+}
+
+form input:placeholder {
+    color: var(--Place-input);
+}
+
+.input-wrapper + .input-wrapper{
+    margin-top: 1.6rem;
+}
+
+.input-wrapper label{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--tt-label);
+    margin-bottom: .8rem;
+}
 .input-wrapper input{
     width: 100%;
+    padding: 1.6rem;
+    border-radius: .4rem;
+
+    background-color: var(--Bg-input);
+    border: 1px solid var(--bor-input);
+}
+
+form button{
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+
+    width: 100%;
+    padding: 1.6rem;
+    margin-top: 3.2rem;
+
+
+    border: none;
+    border-radius: .4rem;
+    background-color: var(--bg-buttom);
+
+    line-height: 2.0rem;
+    color: var(--tt-buttom);
 }
