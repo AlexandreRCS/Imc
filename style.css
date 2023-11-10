@@ -16,6 +16,7 @@
 
     --Place-input:#212529;
     --Bg-input:#02799D;
+    --ot-input:#02799D;
 
     --tt-buttom:#FFFFFF;
     --bg-buttom:#02799D;
@@ -45,4 +46,19 @@ body{
 
     padding: 4.8rem 6.4rem 6.4rem;
     margin-top: -100px;
+}
+
+.title{
+    font-size: 3.2rem;
+    line-height: 4rem;
+
+    color: var(--heading);
+}
+
+.input-wrapper label{
+    
+}
+
+.input-wrapper input{
+    width: 100%;
 }
