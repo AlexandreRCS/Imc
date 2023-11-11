@@ -21,6 +21,7 @@
 
     --tt-buttom:#FFFFFF;
     --bg-buttom:#02799D;
+    --bg-button-ho:#0b9cc9;
 
     --bg-erro:#F03E3E;
     --tt-erro:#FFFFFF;
@@ -108,4 +109,76 @@ form button{
 
     line-height: 2.0rem;
     color: var(--tt-buttom);
+
+    transition: background .7s;
 }
+
+form button:hover{
+    background-color: var(--bg-button-ho);
+}
+
+/* MODAL */
+
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper{
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-content: center;
+
+    background: rgba(0, 0, 0, 0.70);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+}
+
+.modal button{
+    position: absolute;
+
+    background:none;
+    border: none;
+
+    top: 0;
+    right: 0;
+
+    padding: 1.6rem;
+
+    cursor: pointer;
+
+}
+
+/* ALERT ERRO */
+.alert-erro.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alert-erro{
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    text-align: center;
+    color: var(--tt-erro);
+
+    background-color: var(--bg-erro);
+
+    padding: .8rem 0;
+    visibility: hidden;
+    opacity: 0;
+    
+    transform: translateY(-30px);
+    transition: transform .7s ;
+
+}
+
