@@ -62,6 +62,10 @@ body, button, input{
 
     color: var(--heading);
 }
+
+.container h1{
+    margin-bottom: 3.2rem;
+}
 form{
     width: 32rem;
 }
@@ -83,6 +87,8 @@ form input:placeholder {
     line-height: 1.8rem;
     color: var(--tt-label);
     margin-bottom: .8rem;
+
+    display: block;
 }
 .input-wrapper input{
     width: 100%;
