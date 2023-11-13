@@ -9,7 +9,7 @@
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="style.css">
     
-    <script src="script.js" defer ></script>
+    <script src="./js/script.js" defer type="module" ></script>
 </head>
 <body>
     <div class="alert-erro">
@@ -25,7 +25,8 @@
                     <input 
                         type="text" 
                         id="weight"
-                        placeholder="60"/>
+                        placeholder="60" 
+                        required/>
                 </div>
 
                 <div class="input-wrapper">
@@ -33,7 +34,8 @@
                     <input 
                         type="text"
                         id="height"
-                        placeholder="165"/>
+                        placeholder="165" 
+                        required/>
                 </div>
 
                 <button type="submit">Calcular IMC <img src="./assets/arrow-up-right.svg" alt="uma seta apontano para direita"></button>
